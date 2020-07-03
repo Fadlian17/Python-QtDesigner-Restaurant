@@ -134,7 +134,7 @@ border-radius:&quot;8px&quot;;
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">image: url(:/newPrefix/mie-goreng.jpg);</string>
+        <string notr="true">image: url(:/newPrefix/images/mie-goreng.jpg);</string>
        </property>
        <property name="text">
         <string/>

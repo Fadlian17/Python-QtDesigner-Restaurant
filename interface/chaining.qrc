@@ -1,9 +1,9 @@
 <RCC>
   <qresource prefix="newPrefix">
-    <file>minus.png</file>
-    <file>plus.png</file>
-    <file>kopi.jpg</file>
-    <file>mie-goreng.jpg</file>
-    <file>susu.jpg</file>
+    <file>../images/kopi.jpg</file>
+    <file>../images/mie-goreng.jpg</file>
+    <file>../images/minus.png</file>
+    <file>../images/plus.png</file>
+    <file>../images/susu.jpg</file>
   </qresource>
 </RCC>

@@ -173,7 +173,7 @@ font: 18pt &quot;Bebas Neue&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 132, 124);
-image: url(:/newPrefix/plus.png);
+image: url(:/newPrefix/images/plus.png);
 border-radius:5px;</string>
     </property>
     <property name="text">
@@ -194,7 +194,7 @@ border-radius:5px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 132, 124);
-image: url(:/newPrefix/minus.png);
+image: url(:/newPrefix/images/minus.png);
 border-radius:5px;</string>
     </property>
     <property name="text">

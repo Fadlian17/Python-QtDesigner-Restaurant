@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nama_barang": "mie goreng",
+    "harga": 10000,
+    "kategori": "makanan",
+    "detail": "makanan terbuat dari gandum",
+    "images": "/images/mie-goreng.jpg"
+  },
+  {
+    "id": 2,
+    "nama_barang": "kopi",
+    "harga": 2000,
+    "kategori": "minuman",
+    "detail": "minuman terbuat dari biji kopi pilihan",
+    "images": "/images/kopi.jpg"
+  }
+]
