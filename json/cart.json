@@ -5,7 +5,7 @@
     "harga": 10000,
     "kategori": "makanan",
     "detail": "makanan terbuat dari gandum",
-    "images": "/images/mie-goreng.jpg"
+    "images": "images/mie-goreng.jpg"
   },
   {
     "id": 2,
@@ -13,6 +13,6 @@
     "harga": 2000,
     "kategori": "minuman",
     "detail": "minuman terbuat dari biji kopi pilihan",
-    "images": "/images/kopi.jpg"
+    "images": "images/kopi.jpg"
   }
 ]

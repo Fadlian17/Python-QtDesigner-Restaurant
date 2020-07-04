@@ -2,7 +2,9 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
 import json
 from PyQt5 import uic, QtCore
+from PyQt5.QtGui import QPixmap
 import sys
+import os
 
 
 class Header(QWidget):
@@ -18,6 +20,7 @@ class Menu(QWidget):
     def __init__(self):
         super(Menu, self).__init__()
         self.mainUi()
+        self.widget = QWidget()
 
     def mainUi(self):
         uic.loadUi('interface/chain.ui', self)
@@ -48,11 +51,29 @@ class MainApp(QMainWindow):
         widget = QWidget()
         self.vlayout = QVBoxLayout()
         self.hlayout = QHBoxLayout()
-        # self.menuLayout()
+
         self.layout()
+        self.cards()
 
         widget.setLayout(self.vlayout)
         self.setCentralWidget(widget)
+
+    def cards(self):
+        data = self.dataMenu()
+        print(data)
+
+        G_Layout = QGridLayout()
+
+        for row in range(4):
+            for col in range(len(data)):
+                self.menu.label_3.repaint()
+                self.menu.label_4.repaint()
+                # image = QPixmap(data[col['images']])
+                # self.menu.label.setPixmap(image)
+                self.menu.label_3.setText(data[col]['nama_barang'])
+                self.menu.label_4.setText(str(data[col]['harga']))
+                self.menu.label_5.setText(data[col]['detail'])
+                G_Layout.addWidget(self.menu, row, col)
 
     def layout(self):
         self.vlayout.addWidget(self.header)
@@ -65,9 +86,9 @@ class MainApp(QMainWindow):
         self.hlayout.setStretch(0, 700)
         self.hlayout.setStretch(1, 300)
 
-    def menuLayout(self):
-        for d in self.dataMenu():
-            self.menu.v_menu.addWidget(d["images"])
+    # def menuLayout(self):
+    #     for d in self.dataMenu():
+    #         self.menu.v_menu.addWidget(d["images"])
 
     def dataMenu(self):
         with open('json/cart.json') as f:
